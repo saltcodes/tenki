@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2C040FA325DC6CA5008FB094 /* TenkiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C040FA225DC6CA5008FB094 /* TenkiApp.swift */; };
+		2C040FA525DC6CA5008FB094 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C040FA425DC6CA5008FB094 /* ContentView.swift */; };
+		2C040FA725DC6CA7008FB094 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C040FA625DC6CA7008FB094 /* Assets.xcassets */; };
+		2C040FAA25DC6CA7008FB094 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C040FA925DC6CA7008FB094 /* Preview Assets.xcassets */; };
+		2C040FB525DC6CA7008FB094 /* TenkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C040FB425DC6CA7008FB094 /* TenkiTests.swift */; };
+		2C040FC025DC6CA7008FB094 /* TenkiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C040FBF25DC6CA7008FB094 /* TenkiUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2C040FB125DC6CA7008FB094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C040F9725DC6CA5008FB094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C040F9E25DC6CA5008FB094;
+			remoteInfo = Tenki;
+		};
+		2C040FBC25DC6CA7008FB094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2C040F9725DC6CA5008FB094 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C040F9E25DC6CA5008FB094;
+			remoteInfo = Tenki;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2C040F9F25DC6CA5008FB094 /* Tenki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tenki.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C040FA225DC6CA5008FB094 /* TenkiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenkiApp.swift; sourceTree = "<group>"; };
+		2C040FA425DC6CA5008FB094 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		2C040FA625DC6CA7008FB094 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2C040FA925DC6CA7008FB094 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2C040FAB25DC6CA7008FB094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C040FB025DC6CA7008FB094 /* TenkiTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenkiTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C040FB425DC6CA7008FB094 /* TenkiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenkiTests.swift; sourceTree = "<group>"; };
+		2C040FB625DC6CA7008FB094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C040FBB25DC6CA7008FB094 /* TenkiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenkiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C040FBF25DC6CA7008FB094 /* TenkiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenkiUITests.swift; sourceTree = "<group>"; };
+		2C040FC125DC6CA7008FB094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2C040F9C25DC6CA5008FB094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C040FAD25DC6CA7008FB094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C040FB825DC6CA7008FB094 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C040F9625DC6CA5008FB094 = {
+			isa = PBXGroup;
+			children = (
+				2C040FA125DC6CA5008FB094 /* Tenki */,
+				2C040FB325DC6CA7008FB094 /* TenkiTests */,
+				2C040FBE25DC6CA7008FB094 /* TenkiUITests */,
+				2C040FA025DC6CA5008FB094 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2C040FA025DC6CA5008FB094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2C040F9F25DC6CA5008FB094 /* Tenki.app */,
+				2C040FB025DC6CA7008FB094 /* TenkiTests.xctest */,
+				2C040FBB25DC6CA7008FB094 /* TenkiUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2C040FA125DC6CA5008FB094 /* Tenki */ = {
+			isa = PBXGroup;
+			children = (
+				2C040FA225DC6CA5008FB094 /* TenkiApp.swift */,
+				2C040FA425DC6CA5008FB094 /* ContentView.swift */,
+				2C040FA625DC6CA7008FB094 /* Assets.xcassets */,
+				2C040FAB25DC6CA7008FB094 /* Info.plist */,
+				2C040FA825DC6CA7008FB094 /* Preview Content */,
+			);
+			path = Tenki;
+			sourceTree = "<group>";
+		};
+		2C040FA825DC6CA7008FB094 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				2C040FA925DC6CA7008FB094 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		2C040FB325DC6CA7008FB094 /* TenkiTests */ = {
+			isa = PBXGroup;
+			children = (
+				2C040FB425DC6CA7008FB094 /* TenkiTests.swift */,
+				2C040FB625DC6CA7008FB094 /* Info.plist */,
+			);
+			path = TenkiTests;
+			sourceTree = "<group>";
+		};
+		2C040FBE25DC6CA7008FB094 /* TenkiUITests */ = {
+			isa = PBXGroup;
+			children = (
+				2C040FBF25DC6CA7008FB094 /* TenkiUITests.swift */,
+				2C040FC125DC6CA7008FB094 /* Info.plist */,
+			);
+			path = TenkiUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2C040F9E25DC6CA5008FB094 /* Tenki */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C040FC425DC6CA7008FB094 /* Build configuration list for PBXNativeTarget "Tenki" */;
+			buildPhases = (
+				2C040F9B25DC6CA5008FB094 /* Sources */,
+				2C040F9C25DC6CA5008FB094 /* Frameworks */,
+				2C040F9D25DC6CA5008FB094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tenki;
+			productName = Tenki;
+			productReference = 2C040F9F25DC6CA5008FB094 /* Tenki.app */;
+			productType = "com.apple.product-type.application";
+		};
+		2C040FAF25DC6CA7008FB094 /* TenkiTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C040FC725DC6CA7008FB094 /* Build configuration list for PBXNativeTarget "TenkiTests" */;
+			buildPhases = (
+				2C040FAC25DC6CA7008FB094 /* Sources */,
+				2C040FAD25DC6CA7008FB094 /* Frameworks */,
+				2C040FAE25DC6CA7008FB094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C040FB225DC6CA7008FB094 /* PBXTargetDependency */,
+			);
+			name = TenkiTests;
+			productName = TenkiTests;
+			productReference = 2C040FB025DC6CA7008FB094 /* TenkiTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		2C040FBA25DC6CA7008FB094 /* TenkiUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C040FCA25DC6CA7008FB094 /* Build configuration list for PBXNativeTarget "TenkiUITests" */;
+			buildPhases = (
+				2C040FB725DC6CA7008FB094 /* Sources */,
+				2C040FB825DC6CA7008FB094 /* Frameworks */,
+				2C040FB925DC6CA7008FB094 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2C040FBD25DC6CA7008FB094 /* PBXTargetDependency */,
+			);
+			name = TenkiUITests;
+			productName = TenkiUITests;
+			productReference = 2C040FBB25DC6CA7008FB094 /* TenkiUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2C040F9725DC6CA5008FB094 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					2C040F9E25DC6CA5008FB094 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					2C040FAF25DC6CA7008FB094 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2C040F9E25DC6CA5008FB094;
+					};
+					2C040FBA25DC6CA7008FB094 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 2C040F9E25DC6CA5008FB094;
+					};
+				};
+			};
+			buildConfigurationList = 2C040F9A25DC6CA5008FB094 /* Build configuration list for PBXProject "Tenki" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2C040F9625DC6CA5008FB094;
+			productRefGroup = 2C040FA025DC6CA5008FB094 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C040F9E25DC6CA5008FB094 /* Tenki */,
+				2C040FAF25DC6CA7008FB094 /* TenkiTests */,
+				2C040FBA25DC6CA7008FB094 /* TenkiUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2C040F9D25DC6CA5008FB094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C040FAA25DC6CA7008FB094 /* Preview Assets.xcassets in Resources */,
+				2C040FA725DC6CA7008FB094 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C040FAE25DC6CA7008FB094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C040FB925DC6CA7008FB094 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2C040F9B25DC6CA5008FB094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C040FA525DC6CA5008FB094 /* ContentView.swift in Sources */,
+				2C040FA325DC6CA5008FB094 /* TenkiApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C040FAC25DC6CA7008FB094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C040FB525DC6CA7008FB094 /* TenkiTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C040FB725DC6CA7008FB094 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C040FC025DC6CA7008FB094 /* TenkiUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2C040FB225DC6CA7008FB094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C040F9E25DC6CA5008FB094 /* Tenki */;
+			targetProxy = 2C040FB125DC6CA7008FB094 /* PBXContainerItemProxy */;
+		};
+		2C040FBD25DC6CA7008FB094 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2C040F9E25DC6CA5008FB094 /* Tenki */;
+			targetProxy = 2C040FBC25DC6CA7008FB094 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C040FC225DC6CA7008FB094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2C040FC325DC6CA7008FB094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2C040FC525DC6CA7008FB094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Tenki/Preview Content\"";
+				DEVELOPMENT_TEAM = B2UAA5QFBD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tenki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.johnyoat.Tenki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2C040FC625DC6CA7008FB094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"Tenki/Preview Content\"";
+				DEVELOPMENT_TEAM = B2UAA5QFBD;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Tenki/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.johnyoat.Tenki;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2C040FC825DC6CA7008FB094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2UAA5QFBD;
+				INFOPLIST_FILE = TenkiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.johnyoat.TenkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tenki.app/Tenki";
+			};
+			name = Debug;
+		};
+		2C040FC925DC6CA7008FB094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2UAA5QFBD;
+				INFOPLIST_FILE = TenkiTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.johnyoat.TenkiTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tenki.app/Tenki";
+			};
+			name = Release;
+		};
+		2C040FCB25DC6CA7008FB094 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2UAA5QFBD;
+				INFOPLIST_FILE = TenkiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.johnyoat.TenkiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tenki;
+			};
+			name = Debug;
+		};
+		2C040FCC25DC6CA7008FB094 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B2UAA5QFBD;
+				INFOPLIST_FILE = TenkiUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = me.johnyoat.TenkiUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Tenki;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2C040F9A25DC6CA5008FB094 /* Build configuration list for PBXProject "Tenki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C040FC225DC6CA7008FB094 /* Debug */,
+				2C040FC325DC6CA7008FB094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C040FC425DC6CA7008FB094 /* Build configuration list for PBXNativeTarget "Tenki" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C040FC525DC6CA7008FB094 /* Debug */,
+				2C040FC625DC6CA7008FB094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C040FC725DC6CA7008FB094 /* Build configuration list for PBXNativeTarget "TenkiTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C040FC825DC6CA7008FB094 /* Debug */,
+				2C040FC925DC6CA7008FB094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C040FCA25DC6CA7008FB094 /* Build configuration list for PBXNativeTarget "TenkiUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C040FCB25DC6CA7008FB094 /* Debug */,
+				2C040FCC25DC6CA7008FB094 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2C040F9725DC6CA5008FB094 /* Project object */;
+}
