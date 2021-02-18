@@ -8,14 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isNight = false
+    
     var body: some View {
         ZStack{
-            BackgroundView(topColor: Color.blue,bottomColor: Color("lightBlue"))
+            BackgroundView(isNight: $isNight)
             
             VStack{
                 CityTextView(cityName: "Accra", country: "GH")
                 
-                MainWeatherStatusView(imageName: "cloud.sun.fill", temperature: 32)
+                MainWeatherStatusView(imageName: isNight ? "moon.stars.fill": "cloud.sun.fill", temperature: 32)
             
                 HStack(spacing:8){
                     WheatherDayView(dayOfWeek: "MON", imageName: "cloud.drizzle.fill", dayTempreture: 36)
@@ -28,13 +30,9 @@ struct ContentView: View {
                 }
                 Spacer()
                 Button{
-                    
+                    isNight.toggle()
                 } label:{
-                    Text("Change Day Time")
-                        .frame(width: 280, height: 50)
-                        .background(Color.white)
-                        .font(.system(size: 20, design: .default))
-                        .cornerRadius(8)
+                    WeatherButtonView(title: "Change Day Time", textColor: .blue, btnBackgroundColor: .white)
                 }
                 
                 Spacer()
@@ -72,11 +70,10 @@ struct WheatherDayView: View {
 }
 
 struct BackgroundView: View {
-    var topColor:Color
-    var bottomColor:Color
+    @Binding var isNight:Bool
 
     var body: some View {
-        LinearGradient(gradient: Gradient(colors: [topColor, bottomColor]),
+        LinearGradient(gradient: Gradient(colors: [isNight ? Color.black : Color.blue, isNight ? .gray : Color("lightBlue")]),
                        startPoint: .topLeading,
                        endPoint: .bottomTrailing)
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -112,3 +109,4 @@ struct MainWeatherStatusView: View {
         }.padding(.bottom, 40)
     }
 }
+

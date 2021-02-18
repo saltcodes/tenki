@@ -13,6 +13,7 @@
 		2C040FAA25DC6CA7008FB094 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C040FA925DC6CA7008FB094 /* Preview Assets.xcassets */; };
 		2C040FB525DC6CA7008FB094 /* TenkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C040FB425DC6CA7008FB094 /* TenkiTests.swift */; };
 		2C040FC025DC6CA7008FB094 /* TenkiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C040FBF25DC6CA7008FB094 /* TenkiUITests.swift */; };
+		2C6AE00F25DEA5C1002A4029 /* WeatherButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6AE00E25DEA5C1002A4029 /* WeatherButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		2C040FBB25DC6CA7008FB094 /* TenkiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TenkiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C040FBF25DC6CA7008FB094 /* TenkiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenkiUITests.swift; sourceTree = "<group>"; };
 		2C040FC125DC6CA7008FB094 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C6AE00E25DEA5C1002A4029 /* WeatherButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				2C040FA225DC6CA5008FB094 /* TenkiApp.swift */,
 				2C040FA425DC6CA5008FB094 /* ContentView.swift */,
+				2C6AE00E25DEA5C1002A4029 /* WeatherButton.swift */,
 				2C040FA625DC6CA7008FB094 /* Assets.xcassets */,
 				2C040FAB25DC6CA7008FB094 /* Info.plist */,
 				2C040FA825DC6CA7008FB094 /* Preview Content */,
@@ -261,6 +264,7 @@
 			files = (
 				2C040FA525DC6CA5008FB094 /* ContentView.swift in Sources */,
 				2C040FA325DC6CA5008FB094 /* TenkiApp.swift in Sources */,
+				2C6AE00F25DEA5C1002A4029 /* WeatherButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
