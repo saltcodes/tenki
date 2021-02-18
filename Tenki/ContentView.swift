@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.white]),
+            LinearGradient(gradient: Gradient(colors: [.blue, Color("lightBlue")]),
                            startPoint: .topLeading,
                            endPoint: .bottomTrailing)
                 .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
@@ -20,6 +20,7 @@ struct ContentView: View {
                     .font(.system(size: 32,weight:.medium,design:.default))
                     .foregroundColor(.white)
                     .padding()
+                
                 VStack(spacing:8){
                     Image(systemName: "cloud.sun.fill")
                         .renderingMode(.original)
@@ -30,8 +31,8 @@ struct ContentView: View {
                     Text("32°")
                         .font(.system(size: 70, weight: .medium))
                         .foregroundColor(.white)
-                }
-                Spacer()
+                }.padding(.bottom, 40)
+            
                 HStack(spacing:8){
                     WheatherDayView(dayOfWeek: "MON", imageName: "cloud.drizzle.fill", dayTempreture: 36)
                     WheatherDayView(dayOfWeek: "TUE", imageName: "wind", dayTempreture: 29)
@@ -41,6 +42,17 @@ struct ContentView: View {
                     WheatherDayView(dayOfWeek: "SAT", imageName: "cloud.sun.fill", dayTempreture: 31)
                     
                 }
+                Spacer()
+                Button{
+                    
+                } label:{
+                    Text("Change Day Time")
+                        .frame(width: 280, height: 50)
+                        .background(Color.white)
+                        .font(.system(size: 20, design: .default))
+                        .cornerRadius(8)
+                }
+                
                 Spacer()
             }
             
