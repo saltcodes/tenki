@@ -32,7 +32,18 @@ struct ContentView: View {
                         .foregroundColor(.white)
                 }
                 Spacer()
+                HStack(spacing:8){
+                    WheatherDayView(dayOfWeek: "MON", imageName: "cloud.drizzle.fill", dayTempreture: 36)
+                    WheatherDayView(dayOfWeek: "TUE", imageName: "wind", dayTempreture: 29)
+                    WheatherDayView(dayOfWeek: "WED", imageName: "cloud.sun.fill", dayTempreture: 34)
+                    WheatherDayView(dayOfWeek: "THU", imageName: "sun.max.fill", dayTempreture: 40)
+                    WheatherDayView(dayOfWeek: "FRI", imageName: "sun.haze.fill", dayTempreture: 29)
+                    WheatherDayView(dayOfWeek: "SAT", imageName: "cloud.sun.fill", dayTempreture: 31)
+                    
+                }
+                Spacer()
             }
+            
         }
     }
 }
@@ -40,5 +51,26 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+    }
+}
+
+struct WheatherDayView: View {
+    var dayOfWeek:String
+    var imageName:String
+    var dayTempreture:Int
+    
+    var body: some View {
+        VStack{
+            Text(dayOfWeek)
+                .font(.system(size: 16))
+                .foregroundColor(.white)
+            Image(systemName: imageName)
+                .renderingMode(.original)
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 48, height: 48)
+            Text("\(dayTempreture)°")
+                .font(.system(size: 20))
+                .foregroundColor(.white)
+        }
     }
 }
