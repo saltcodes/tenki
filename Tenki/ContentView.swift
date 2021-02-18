@@ -10,28 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         ZStack{
-            LinearGradient(gradient: Gradient(colors: [.blue, Color("lightBlue")]),
-                           startPoint: .topLeading,
-                           endPoint: .bottomTrailing)
-                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            BackgroundView(topColor: Color.blue,bottomColor: Color("lightBlue"))
             
             VStack{
-                Text("Accra,GH")
-                    .font(.system(size: 32,weight:.medium,design:.default))
-                    .foregroundColor(.white)
-                    .padding()
+                CityTextView(cityName: "Accra", country: "GH")
                 
-                VStack(spacing:8){
-                    Image(systemName: "cloud.sun.fill")
-                        .renderingMode(.original)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 180, height: 180)
-                    
-                    Text("32°")
-                        .font(.system(size: 70, weight: .medium))
-                        .foregroundColor(.white)
-                }.padding(.bottom, 40)
+                MainWeatherStatusView(imageName: "cloud.sun.fill", temperature: 32)
             
                 HStack(spacing:8){
                     WheatherDayView(dayOfWeek: "MON", imageName: "cloud.drizzle.fill", dayTempreture: 36)
@@ -84,5 +68,47 @@ struct WheatherDayView: View {
                 .font(.system(size: 20))
                 .foregroundColor(.white)
         }
+    }
+}
+
+struct BackgroundView: View {
+    var topColor:Color
+    var bottomColor:Color
+
+    var body: some View {
+        LinearGradient(gradient: Gradient(colors: [topColor, bottomColor]),
+                       startPoint: .topLeading,
+                       endPoint: .bottomTrailing)
+            .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+    }
+}
+
+struct CityTextView: View {
+    var cityName:String
+    var country:String
+    var body: some View {
+        Text("\(cityName) ,\(country)")
+            .font(.system(size: 32,weight:.medium,design:.default))
+            .foregroundColor(.white)
+            .padding()
+    }
+}
+
+struct MainWeatherStatusView: View {
+    var imageName:String
+    var temperature:Int
+    
+    var body: some View {
+        VStack(spacing:8){
+            Image(systemName: imageName)
+                .renderingMode(.original)
+                .resizable()
+                .aspectRatio(contentMode: .fit)
+                .frame(width: 180, height: 180)
+            
+            Text("\(temperature)°")
+                .font(.system(size: 70, weight: .medium))
+                .foregroundColor(.white)
+        }.padding(.bottom, 40)
     }
 }
